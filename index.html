@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Lobster&family=Long+Cang&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Lobster&family=Long+Cang&family=Noto+Sans+HK&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Breaking Bad</title>
+  </head>
+  <body>
+    <div>
+      <div class="overlay"></div>
+      <header>
+        <h1 class="text-center p-3">Breading bad</h1>
+      </header>
+
+      <div class="container">
+        <div class="box">
+          <select
+            class="actors form-control"
+            onchange="getCharacter(this.value)"
+            id="characters"
+          >
+            <option>Select character</option>
+          </select>
+        </div>
+      </div>
+
+      <!-- ............. -->
+      <div class="container text-center data-zone " data-value="false" id="zone">
+        <div class="row">
+          <div class="col-6">
+            <div id="pic">
+              <img id="image" />
+            </div>
+          </div>
+          <div class="col-6">
+            <table id="details">
+             
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
